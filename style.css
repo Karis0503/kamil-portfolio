@@ -21,15 +21,35 @@ body {
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding: 24px 40px;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(11, 11, 13, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
 }
 
 .nav a {
   color: var(--muted);
   text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
 }
+
+.nav a:hover {
+  color: var(--accent);
+}
+
 
 .hero {
   min-height: 80vh;
